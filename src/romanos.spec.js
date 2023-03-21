@@ -13,4 +13,7 @@ describe("Romanizar", () => {
   it("si el numero es 50 devuelve 'L'", () => {
     expect(romanizar(50)).toEqual("L");
   });
+  it("si el numero es 100 devuelve 'C'", () => {
+    expect(romanizar(100)).toEqual("C");
+  });
 });
