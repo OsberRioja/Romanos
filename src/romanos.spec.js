@@ -10,4 +10,7 @@ describe("Romanizar", () => {
   it("si el numero es 10 devuelve 'X'", () => {
     expect(romanizar(10)).toEqual("X");
   });
+  it("si el numero es 50 devuelve 'L'", () => {
+    expect(romanizar(50)).toEqual("L");
+  });
 });

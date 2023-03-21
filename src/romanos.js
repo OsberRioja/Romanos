@@ -12,6 +12,10 @@ function romanizar(num)
     {
         return "X";
     }
+    if(num==50)
+    {
+        return "L";
+    }
 }
 
 export default romanizar;
