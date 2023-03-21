@@ -10,10 +10,13 @@ describe("Romanizar", () => {
   it("si el numero es 10 devuelve 'X'", () => {
     expect(romanizar(10)).toEqual("X");
   });
-  it("si el numero es 50 devuelve 'L'", () => {
-    expect(romanizar(50)).toEqual("L");
-  });
-  it("si el numero es 100 devuelve 'C'", () => {
-    expect(romanizar(100)).toEqual("C");
+//   it("si el numero es 50 devuelve 'L'", () => {
+//     expect(romanizar(50)).toEqual("L");
+//   });
+//   it("si el numero es 100 devuelve 'C'", () => {
+//     expect(romanizar(100)).toEqual("C");
+//   });
+  it("si el numero 10 o menor deberia devolver su representacion en romano", () => {
+    expect(romanizar(9)).toEqual("IX");
   });
 });

@@ -1,25 +1,18 @@
 function romanizar(num)
 {
-    if(num==1)
+    const letras=['X','IX','V','IV','I'];
+    const valores=[10,9,5,4,1];
+    let result='';
+    
+    for(var i=0;i<letras.length;i++)
     {
-        return "I";
+        while(num>=valores[i])
+        {
+            num=num-valores[i];
+            result=result+letras[i];
+        }
     }
-    if(num==5)
-    {
-        return "V";
-    }
-    if(num==10)
-    {
-        return "X";
-    }
-    if(num==50)
-    {
-        return "L";
-    }
-    if(num==100)
-    {
-        return "C";
-    }
+    return result;
 }
 
 export default romanizar;
