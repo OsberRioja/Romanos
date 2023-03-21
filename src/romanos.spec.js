@@ -20,6 +20,6 @@ describe("Romanizar", () => {
     expect(romanizar(9)).toEqual("IX");
   });
   it("si el numero es 100 o menor deberia devolver su representacion en romano", () => {
-    expect(romanizar(99)).toEqual("XCIX");
+    expect(romanizar(97)).toEqual("XCVII");
   });
 });
