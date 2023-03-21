@@ -8,6 +8,10 @@ function romanizar(num)
     {
         return "V";
     }
+    if(num==10)
+    {
+        return "X";
+    }
 }
 
 export default romanizar;
