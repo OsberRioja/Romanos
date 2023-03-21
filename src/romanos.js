@@ -4,6 +4,10 @@ function romanizar(num)
     {
         return "I";
     }
+    if(num==5)
+    {
+        return "V";
+    }
 }
 
 export default romanizar;
